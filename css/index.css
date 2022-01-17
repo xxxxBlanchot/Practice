@@ -1,0 +1,91 @@
+
+
+/* Home */
+.home {
+    /* position: static; */
+    overflow: hidden;
+}
+.home .bgvideo{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index:-11;
+}
+.bgvideo > video {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index:-11;
+}
+.home .home_poster {
+    display:block;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+.home .home_poster .logo {
+    margin: 140px auto;
+    margin-bottom: 0;
+    background: url(../images/logo.png) no-repeat;
+    width: 362px;
+    height: 66px;
+}
+.home .home_poster .tittle {
+    margin: 10px auto;
+    background: url(../images/poster1.svg) no-repeat;
+    padding: 0;
+    width: 840px;
+    height: 140px;
+} 
+.home .home_poster .subtittle {
+    margin: 0 auto;
+    margin-top: -50px;
+    background: url(../images/poster3.svg) no-repeat;
+    background-position: 0 0;
+    padding: 0;
+    width: 780px;
+    height: 80px;
+} 
+.home .home_poster .content {
+    margin: 0 auto;
+    margin-top: 40px;
+    /* margin-bottom: 275px; */
+    background: url(../images/poster2.svg) no-repeat;
+    background-position: 0 0;
+    padding: 0;
+    width: 400px;
+    height: 272px;
+} 
+/* home */
+/* body */
+.main {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    /* background-color: pink; */
+    background: url(../images/liyue_habour_2.jpeg) no-repeat center/cover;
+    /* background-size: cover; */
+    z-index: -12;
+}

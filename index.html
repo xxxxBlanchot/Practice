@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2 BiheLIN</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="paimeng.ico" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/new_character.css">
+    <script src="js/bgm.js"></script>
+
+</head>
+
+<body>
+    <!-- ======navigation bar====== -->
+    <header class="header">
+        <div class="navbar">
+            <div class="tittle">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#newcharacter">New Characters</a></li>
+                </ul>
+            </div>
+            <div class="bgm">
+                <audio id="music2" src="media/Good Night, Liyue.mp3" loop="loop"></audio>
+                <a href="javascript:playPause();">
+                    <img class="music" src="music_off.png" id="music_btn" border="0">
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- ======navigation bar====== -->
+
+    <!-- ======background video====== -->
+    <div class="bgvideo">
+        <div class="blank"></div>
+        <video muted="muted" autoplay="autoplay" loop="loop" style="opacity: 1" style="width: 1280px; height:720px;" poster="images/bg_poster.jpg">
+            <source src="media/bg-video.webm" type="video/webm">
+            <source src="media/bg-video.mp4" type="audio/mp4">
+            <source src="media/bg-video.ogv" type="video/ogg">
+           
+        </video>
+    </div>
+    <!-- ======background video====== -->
+
+    <!-- ======home page====== -->
+    <div class="home" id="home">
+        <div class="home_poster">
+            <div class="logo"></div>
+            <div class="tittle"></div>
+            <div class="subtittle"></div>
+            <div class="content"></div>
+            <div class="deco"></div>
+        </div>
+
+    </div>
+    <!-- ======home page====== -->
+
+    <!-- ======Intro======   -->
+    <div class="part1" id="intro">
+        <section class="body">
+            <div class="text_deco_left_top"></div>
+            <div class="text_deco_right_top"></div>
+            <div class="text_deco_mid_top"></div>
+            <div class="text_deco_mid_down"></div>
+            <div class="text_deco_left_down"></div>
+            <div class="text_deco_right_down"></div>
+            <div class="whygenshin">
+                <h1 id="point1">Why Genshin</h1>
+                <div class="subtittle">
+                    <h2 id="intro">A brief introduction </h2>
+                </div>
+                <p id="content">Genshin Impact is an open-world ARPG (Action Role-Playing Game) developed by miHoYo, a
+                    Chinese video game development and animation studio. Currently, it supports platforms like Android,
+                    iOS, Microsoft Windows, PlayStation 4&5, and it will release on Nintendo Switch in the future.</p>
+                <br>
+                <p id="content">Stories of Genshin play out on the continent of Teyvat, a fantasy world with seven
+                    elements of power, including wind, water, fire, ice, rock, thunder, and grass. By far, there are
+                    over five countries and areas are open for players to explore, and more than 40 characters with
+                    different elemental power and weapon types to choose from. Players will play the part of a
+                    “traveller” in Genshin’s world, looking for the lost sibling.</p><br>
+                <div class="pics">
+                    <div class="subtittle">
+                        <h2 id="intro">Shotcuts of Cities</h2>
+                    </div>
+                    <div class="genshin_pics">
+                        <ul>
+                            <li><img src="images/mengde1.jpeg" alt="">
+                                <p id="cities">&loz; Mondstad &loz;</p>
+                            </li>
+                            <li><img src="images/liyue1.jpeg" alt="">
+                                <p id="cities">&loz; Liyue &loz; </p>
+                            </li>
+                            <li><img src="images/inazuma1.jpeg" alt="">
+                                <p id="cities">&loz; Inazuma &loz;</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div><br>
+                <div class="subtittle">
+                    <h2 id="intro">Reasons for choosing Genshin </h2>
+                </div>
+
+                <p>The most important reason is that I am a player of Genshin and fond of this game, attracted by the
+                    plot, the battle with elemental abilities, and those vivid characters. What’s more, Genshin is hot
+                    globally. By 25 October 2021, there were almost 9,000,000 people averagely playing per day in the
+                    last 30 days.
+                </p>
+                <span>
+                    <a href="https://www.dexerto.com/genshin-impact/how-many-people-play-genshin-impact-player-count-tracker-1683360/"
+                        target="blank"> &gt;&gt; Data Source &lt;&lt; </a>
+                </span>
+                <p>
+                    Furthermore, one of the new characters named Yunjin sparked a lively discussion among Chinese
+                    players for the Liyue opera she sang. Therefore, I was curious about how people would talk about
+                    Genshin’s new version, especially the two new characters.
+                </p><br>
+                <p>
+                    It is noteworthy that miHoYo strongly supports secondary creation works amongst Genshin players,
+                    like illustrations, comics, fan-made videos etc. We could find plenty of brilliant works on various
+                    social platforms like Twitter.
+                </p>
+                <div class="subtittle">
+                    <h2 id="intro">Yunjin's Opera </h2>
+                </div>
+                <div class="intro_video">
+                    <div id="deco"></div>
+                    <div id="black"></div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EiAhMr6IJTQ?controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!-- ======Intro======   -->
+
+    <!-- ========New Character====== -->
+    <div class="newcharacter" id="newcharacter">
+        <section class="body clearfix">
+            <div class="text_deco_left_top"></div>
+            <div class="text_deco_right_top"></div>
+            <div class="text_deco_mid_top"></div>
+            <div class="text_deco_mid_down"></div>
+            <div class="text_deco_left_down"></div>
+            <div class="text_deco_right_down"></div>
+            <div class="n_c_1">
+                <h1>New Characters</h1>
+                <p>On 11:00 AM (GMT+8), 5 January 2022, the new version (v2.4) named “Fleeting Colours in Flight” was
+                    released. The information of the updated version includes several latest events, a new area
+                    Enkanomiya, two new characters who are five-star character Shenhe and four-star character Yunjin. I
+                    will focus on the discussion of the new characters on Twitter.</p>
+            </div><br>
+            <div class="characters">
+                <div class="shenhe">
+                    <div class="shenhe_image"></div>
+                    <div class="shenhe_name">
+                        <h1><a href="https://genshin.mihoyo.com/en/character/liyue?char=14" target="_blank">Shenhe</a>
+                        </h1>
+                    </div>
+                    <div class="shenhe_intro">
+                        <p>Even though she was born in the human world, she ended up being an adepti disciple. She grew
+                            up in the mountains far away from Liyue Harbor, her soul bound with red ropes, training both
+                            her body and mind.</p><br>
+                        <p> Despite having the elegant temperament of an adeptus, she seems to be shrouded in mystery.
+                        </p><br>
+                        <button id="official"><a href="https://genshin.mihoyo.com/en/character/liyue?char=14"
+                                target="_blank"> Source: Official Site</a></button>
+                    </div>
+                </div>
+                <div class="yunjin">
+                    <div class="yunjin_image"></div>
+                    <div class="yunjin_name">
+                        <h1><a href="https://genshin.mihoyo.com/en/character/liyue?char=15" target="_blank">Yunjin</a>
+                        </h1>
+                    </div>
+                    <div class="yunjin_intro">
+                        <p>The current director of the Yun-Han Opera Troupe, a renowned Liyue opera singer who is
+                            skilled in both playwriting and singing. Her style is one-of-a-kind, exquisite and delicate,
+                            much like the person herself.</p><br>
+                        <button id="official"><a href="https://genshin.mihoyo.com/en/character/liyue?char=15"> Source:
+                                Official Site</a></button>
+                    </div>
+                </div>
+                <div class="main_hd">
+                    <div class="tags_intro">
+                        <h2>Hashtags</h2>
+                        <h1>#shenhe or #yunjin</h1>
+                        <div class="counts">
+                            <span id="total_tweets">
+                                <h2>Total Tweets</h2>
+                                <h1>34,868</h1>
+                            </span>
+                            <span id="total_tweeters">
+                                <h2>Total Tweeters</h2>
+                                <h1>21,867</h1>
+                            </span>
+                            <span id="tweets_per_person">
+                                <h2>Tweets per Person</h2>
+                                <h1>1.6</h1>
+                            </span>
+                            <span id="tweets_per_hour">
+                                <h2>Tweet Rate ( per hour )</h2>
+                                <h1>2682.2</h1>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="narrator">
+                        <p id="narrator">
+                            The total tweets colleted was 34,868 and the number for tweeters was 21,867,
+                            averagely every tweeter had 1.6 tweets and 2,682 tweets were created every hour. Amongst
+                            34,868 tweets, there were 677 original ones and the 21,688 retweets occupied for 98.06%.
+                            Around 62.2% of tweets had locations. Interestingly, the top3 tweets' resources were Twitter
+                            for android, iPhone and Web App.</p>
+                        <br>
+                    </div>
+                    <div class="basic">
+                        <div class="tweets_tittle">
+                            <ul>
+                                <li>
+                                    <h2>Basic Information</h2>
+                                </li>
+                                <li>
+                                    <h2>Tweets Sources</h2>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tweets_ratio1">
+                            <div id="container" style="height: 100%"></div>
+                            <script type="text/javascript"
+                                src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+                            <script type="text/javascript">
+                                var dom = document.getElementById("container");
+                                var myChart = echarts.init(dom);
+                                var app = {};
+                                var option;
+                                option = {
+                                    textStyle: {
+                                        fontWeight: [700]
+                                    },
+                                    tooltip: {
+                                        trigger: 'item',
+                                        formatter: '{a} <br/>{b}: {c} ({d}%)'
+                                    },
+                                    legend: {
+                                        data: ['Retweets', 'Original Tweets'],
+                                        textStyle: {
+                                            color: "#fff",
+                                            fontWeight: '700',
+                                            fontSize: '13'
+                                        }
+                                    },
+                                    series: [
+                                        {
+                                            name: 'Tweet Type',
+                                            type: 'pie',
+                                            selectedMode: 'single',
+                                            radius: [0, '30%'],
+                                            label: {
+                                                position: 'inner',
+                                                fontSize: 12,
+                                                color: '#fff'
+                                            },
+                                            labelLine: {
+                                                show: false
+                                            },
+                                            data: [
+                                                { value: 34191, name: 'Retweets' },
+                                                { value: 677, name: 'Original Tweets', selected: true }
+                                            ]
+                                        },
+                                        {
+                                            name: 'Location Status',
+                                            type: 'pie',
+                                            radius: ['45%', '60%'],
+                                            labelLine: {
+                                                length: 30
+                                            },
+                                            label: {
+                                                formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+                                                backgroundColor: 'rgba(255,255,255,.5)',
+                                                borderColor: '#fff',
+                                                borderWidth: .5,
+                                                borderRadius: 4,
+                                                rich: {
+                                                    a: {
+                                                        color: '#6E7079',
+                                                        lineHeight: 22,
+                                                        align: 'center',
+                                                        fontSize: 11
+                                                    },
+                                                    hr: {
+                                                        borderColor: '#fff',
+                                                        width: '100%',
+                                                        borderWidth: 1,
+                                                        height: 0
+                                                    },
+                                                    b: {
+                                                        color: '#4C5058',
+                                                        fontSize: 12,
+                                                        fontWeight: 'bold',
+                                                        lineHeight: 33
+                                                    },
+                                                    per: {
+                                                        color: '#fff',
+                                                        backgroundColor: '#4C5058',
+                                                        padding: [3, 4],
+                                                        borderRadius: 4
+                                                    }
+                                                }
+                                            },
+                                            data: [
+                                                { value: 21688, name: 'With locations' },
+                                                { value: 13180, name: 'TWithout locations' }
+                                            ]
+                                        }
+                                    ]
+                                };
+
+
+                                if (option && typeof option === 'object') {
+                                    myChart.setOption(option);
+                                }
+
+                            </script>
+                        </div>
+                        <div class="tweets_sources">
+                            <!-- <h2 id="tweets_soureces">Top Sources</h2> -->
+                            <div id="container3" style="height: 100%"></div>
+                            <script type="text/javascript"
+                                src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+                            <script type="text/javascript">
+                                var dom = document.getElementById("container3");
+                                var myChart = echarts.init(dom);
+                                var app = {};
+                                var option;
+                                option = {
+                                    tooltip: {
+                                        trigger: 'item'
+                                    },
+                                    legend: {
+                                        top: '0%',
+                                        left: 'center',
+                                        textStyle: {
+                                            color: "#fff",
+                                            fontWeight: '700',
+                                            fontSize: '11'
+                                        }
+                                    },
+                                    series: [
+                                        {
+                                            name: 'Sources',
+                                            type: 'pie',
+                                            top: "3%",
+                                            radius: ['30%', '60%'],
+                                            avoidLabelOverlap: false,
+                                            label: {
+                                                show: false,
+                                                position: 'center',
+                                                color: '#666'
+                                            },
+                                            emphasis: {
+                                                label: {
+                                                    show: true,
+                                                    color: '#fff',
+                                                    fontSize: '20',
+                                                    fontWeight: 'bold'
+                                                    //   textBorderColor: '#fff',
+                                                    //   textBorderWidth: '1.5'
+                                                }
+                                            },
+                                            labelLine: {
+                                                show: false
+                                            },
+                                            data: [
+                                                { value: 16577, name: 'Twitter for Android' },
+                                                { value: 9939, name: 'Twitter for iPhone' },
+                                                { value: 7306, name: 'Twitter Web App' },
+                                                { value: 850, name: 'Twitter for iPad' },
+                                                { value: 125, name: 'TweetDeck' },
+                                                { value: 14, name: 'PlayStation®Network' },
+                                                { value: 76, name: 'Others' }
+                                            ]
+                                        }
+                                    ]
+                                };
+
+                                if (option && typeof option === 'object') {
+                                    myChart.setOption(option);
+                                }
+
+                            </script>
+                        </div>
+                    </div>
+                    <div class="narrator">
+                        <p id="narrator">The new version was released at 3:00 AM (GMT), 5 January, and we can see how
+                            hot the hashtag was around the release time. The first period was right before the release,
+                            the overall trend in the number of tweets was on the rise, and it was clear that the buzz
+                            continued to rise ahead of the new update. As a whole, the discussion heat shows a trend of
+                            fluctuating downward. </p>
+                    </div>
+                    <div class="timeline">
+                        <h2 id="timeline">Timeline</h2>
+                        <div class="timeline_pic"></div>
+                    </div>
+                    <div class="tweets_timechart">
+                        <h2 id="timechart_tittle">Topic Discussion Growth Chart</h2>
+                        <div id="container2" style="height: 100%"></div>
+                        <script type="text/javascript"
+                            src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+                        <script type="text/javascript">
+                            var dom = document.getElementById("container2");
+                            var myChart = echarts.init(dom);
+                            var app = {};
+                            var option;
+                            option = {
+                                color: ["#fff"],
+                                title: {
+                                    text: ''
+                                },
+                                tooltip: {
+                                    trigger: 'axis'
+                                },
+                                legend: {
+                                    data: ['#shenhe OR #yunjin'],
+                                    textStyle: {
+                                        color: "rgba(255, 255, 255, 1)",
+                                        fontWeight: 700,
+                                        fontSize: 15
+                                    }
+                                },
+                                grid: {
+                                    left: '5%',
+                                    right: '5%',
+                                    bottom: '20%',
+                                    top: '10%',
+                                    containLabel: true
+                                },
+                                textStyle: {
+                                    fontWeight: [700],
+                                    color: '#fff'
+                                },
+                                xAxis: {
+                                    type: 'category',
+                                    name: 'Time',
+                                    boundaryGap: false,
+                                    data: ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00', '', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00']
+                                },
+                                yAxis: {
+                                    type: 'value',
+                                    name: 'Number of Tweets',
+                                    fontWeight: [700],
+                                    fontSize: 16
+
+                                },
+                                series: [
+                                    {
+                                        name: '#shenhe OR #yunjin',
+                                        type: 'line',
+                                        stack: 'Total',
+
+                                        data: ['', 652, 3552, 3240, 3032, 3686, 3657, '', 3091, 2566, 2321, 2334, 2287, 2819, 1630, 3091, 2566, 2321, 2334, 2287, 2819]
+                                    }
+
+                                ]
+                            };
+
+                            if (option && typeof option === 'object') {
+                                myChart.setOption(option);
+                            }
+
+                        </script>
+                    </div>
+                    <div class="narrator">
+                        <p id="narrator">Among 21,866 tweets that had locations, the top 10 locations were as below.
+                            However, possibily in consider of privacy, some of locations were not valid. And the top5
+                            valid locations of countries were United States, Japan, France, Canada, and Mexico. </p>
+                    </div>
+                    <div class="tweets_map">
+                        <div class="tweets_location">
+                            <div class="tweets_location_tittle">
+                                <ul>
+                                    <li>
+                                        <h2>Top 10 Locations</h2>
+                                    </li>
+                                    <li>
+                                        <h2>Top 5 Valid Locations</h2>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="left">
+                                <div id="container5"></div>
+                                <script type="text/javascript"
+                                    src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+                                <script type="text/javascript">
+                                    var dom = document.getElementById("container5");
+                                    var myChart = echarts.init(dom);
+                                    var app = {};
+                                    var option;
+                                    option = {
+                                        title: {
+                                            text: '',
+                                            subtext: '',
+                                            left: 'center'
+                                        },
+                                        tooltip: {
+                                            trigger: 'item'
+                                        },
+                                        legend: {
+                                            orient: 'vertical',
+                                            left: '5%',
+                                            textStyle: {
+                                                color: "#fff",
+                                                fontWeight: '700'
+                                            }
+                                        },
+                                        series: [
+                                            {
+                                                name: 'Access From',
+                                                type: 'pie',
+                                                radius: '50%',
+                                                left: "60",
+                                                data: [
+                                                    { name: 'she/her', value: 388 },
+                                                    { name: 'United States', value: 126 },
+                                                    { name: 'he/him', value: 103 },
+                                                    { name: 'they/them', value: 101 },
+                                                    { name: 'Canada', value: 89 },
+                                                    { name: 'she/they', value: 83 },
+                                                    { name: 'California,USA', value: 72 },
+                                                    { name: 'México', value: 71 },
+                                                    { name: 'France', value: 71 },
+                                                    { name: '日本', value: 65 }
+                                                ],
+                                                emphasis: {
+                                                    itemStyle: {
+                                                        shadowBlur: 10,
+                                                        shadowOffsetX: 0,
+                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    };
+
+                                    if (option && typeof option === 'object') {
+                                        myChart.setOption(option);
+                                    }
+
+                                </script>
+                            </span>
+                            <span class="right">
+                                <div id="container6" style="height: 100%"></div>
+                                <script type="text/javascript"
+                                    src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+                                <script type="text/javascript">
+                                    var dom = document.getElementById("container6");
+                                    var myChart = echarts.init(dom);
+                                    var app = {};
+                                    var option;
+                                    option = {
+                                        title: {
+                                            text: '',
+                                            subtext: '',
+                                            left: 'center'
+                                        },
+                                        tooltip: {
+                                            trigger: 'item'
+                                        },
+                                        legend: {
+                                            orient: 'vertical',
+                                            left: '0%',
+                                            textStyle: {
+                                                color: "#fff",
+                                                fontWeight: '700'
+                                            }
+                                        },
+                                        series: [
+                                            {
+                                                name: 'Access From',
+                                                type: 'pie',
+                                                radius: '50%',
+                                                left: "60",
+                                                data: [
+                                                    { name: 'United States', value: 537 },
+                                                    { name: 'Japan', value: 223 },
+                                                    { name: 'France', value: 139 },
+                                                    { name: 'Canada', value: 138 },
+                                                    { name: 'México', value: 130 }
+                                                ],
+                                                emphasis: {
+                                                    itemStyle: {
+                                                        shadowBlur: 10,
+                                                        shadowOffsetX: 0,
+                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    };
+
+                                    if (option && typeof option === 'object') {
+                                        myChart.setOption(option);
+                                    }
+
+                                </script>
+                            </span>
+                        </div>
+                        <div id="container4">
+                            <iframe title="Top 5 Valid Locations" aria-label="Map" id="datawrapper-chart-axsG0"
+                                src="https://datawrapper.dwcdn.net/axsG0/3/" scrolling="no" frameborder="0"
+                                style="width: 0; min-width: 100% !important; border: none;" height="514"></iframe>
+                            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                            </script>
+                        </div>
+                    </div>
+                    <div class="narrator">
+                        <p id="narrator"> The total tweets created or retweeted by the top10 tweeters were 243, which
+                            was 0.7%. It is note-worthy that the creative atmosphere of Genshin topic was quite strong.
+                            The Top5 Tweets were all secondary creation works which covered 3 different genres,
+                            including illustrations, cosplay and manga. </p>
+                    </div>
+                    <div class="top10">
+                        <div class="tweets_tittle" id="top_tittle">
+                            <ul>
+                                <li>
+                                    <h2> Top 10 Tweeters</h2>
+                                </li>
+                                <li>
+                                    <h2>Top 5 Tweets</h2>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="top_table_container">
+                            <ul id="top">
+                                <li>
+                                    <div class="toptweeterstable">
+                                        <table id="top10tweeters">
+                                            <tr>
+                                                <th>Tweeters</th>
+                                                <th>Number of Tweets</th>
+                                            </tr>
+                                            <tr>
+                                                <td>STANTRlGGER</td>
+                                                <td>29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloudedeee</td>
+                                                <td>28</td>
+                                            </tr>
+                                            <tr>
+                                                <td>aleexu_</td>
+                                                <td>26</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mikoto_HanaNene</td>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>tsururoachie</td>
+                                                <td>24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>KiralovesIdols</td>
+                                                <td>24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Idkokl</td>
+                                                <td>
+                                                    24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>peaPkey</td>
+                                                <td>23</td>
+                                            </tr>
+                                            <tr>
+                                                <td>zhongxxxiaoyun</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ruzikaya</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total</td>
+                                                <td>243</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top5tweets">
+                                        <table id="top5tweets">
+                                            <tr>
+                                                <th>Tweets</th>
+                                                <th>Number of Retweets</th>
+                                            </tr>
+                                            <tr>
+                                                <td>RT @kiyochiishoko: wip💙 #Shenhe #原神 https://t.co/c8jG80MxsV</td>
+                                                <td>2312</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RT @KisaragiAsh: #GenshinImapct #Shenhe #原神 #申鹤
+                                                    https://t.co/QeFOtYWn89</td>
+                                                <td>1523</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RT @Esojiros: 申鶴さん実装おめでとう！❄❄❄
+                                                    #原神 #GenshinImapct
+                                                    #chongyun #shenhe https://t.co/y9QNXHYWhf</td>
+                                                <td>1410</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RT @iunsei: #YUNJIN DAY!!!! https://t.co/FiZt4vg9z0</td>
+                                                <td>1195</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RT @pun_rii: #shenhe Thank you 😳 https://t.co/Du8A7zUmuS</td>
+                                                <td>1172</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hot_tweets_container">
+                        <ul>
+                            <li>
+                                <div id="hottweet_left">
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="und" dir="ltr">wip💙 <a
+                                                href="https://twitter.com/hashtag/Shenhe?src=hash&amp;ref_src=twsrc%5Etfw">#Shenhe</a>
+                                            <a
+                                                href="https://twitter.com/hashtag/%E5%8E%9F%E7%A5%9E?src=hash&amp;ref_src=twsrc%5Etfw">#原神</a>
+                                            <a href="https://t.co/c8jG80MxsV">pic.twitter.com/c8jG80MxsV</a>
+                                        </p>&mdash; kiyochii
+                                        | きよし 🌸 (@kiyochiishoko) <a
+                                            href="https://twitter.com/kiyochiishoko/status/1478385673350664208?ref_src=twsrc%5Etfw">January
+                                            4, 2022</a>
+                                    </blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
+                                </div>
+                                <div id="hottweet_left2">
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="und" dir="ltr"><a
+                                                href="https://twitter.com/hashtag/YUNJIN?src=hash&amp;ref_src=twsrc%5Etfw">#YUNJIN</a>
+                                            DAY!!!! <a href="https://t.co/FiZt4vg9z0">pic.twitter.com/FiZt4vg9z0</a></p>
+                                        &mdash;
+                                        iun🐰🌊 comms open!! (@iunsei) <a
+                                            href="https://twitter.com/iunsei/status/1478567893537226752?ref_src=twsrc%5Etfw">January
+                                            5, 2022</a>
+                                    </blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
+                                </div>
+                                <div id="hottweet_left3">
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="en" dir="ltr"><a
+                                                href="https://twitter.com/hashtag/shenhe?src=hash&amp;ref_src=twsrc%5Etfw">#shenhe</a>
+                                            Thank you 😳 <a
+                                                href="https://t.co/Du8A7zUmuS">pic.twitter.com/Du8A7zUmuS</a></p>
+                                        &mdash; P• (@pun_rii) <a
+                                            href="https://twitter.com/pun_rii/status/1478797205599227907?ref_src=twsrc%5Etfw">January
+                                            5, 2022</a>
+                                    </blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
+                                </div>
+                            </li>
+                            <li>
+                                <div id="hot_tweets_tittle">
+                                    <h1>Original Tweets of Top5 Retweets</h1>
+                                </div>
+                                <div id="hottweet_right1">
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="und" dir="ltr"><a
+                                                href="https://twitter.com/hashtag/GenshinImapct?src=hash&amp;ref_src=twsrc%5Etfw">#GenshinImapct</a>
+                                            <a
+                                                href="https://twitter.com/hashtag/Shenhe?src=hash&amp;ref_src=twsrc%5Etfw">#Shenhe</a>
+                                            <a
+                                                href="https://twitter.com/hashtag/%E5%8E%9F%E7%A5%9E?src=hash&amp;ref_src=twsrc%5Etfw">#原神</a>
+                                            <a
+                                                href="https://twitter.com/hashtag/%E7%94%B3%E9%B9%A4?src=hash&amp;ref_src=twsrc%5Etfw">#申鹤</a>
+                                            <a href="https://t.co/QeFOtYWn89">pic.twitter.com/QeFOtYWn89</a>
+                                        </p>&mdash;
+                                        kisaragiAsh_cos (@KisaragiAsh) <a
+                                            href="https://twitter.com/KisaragiAsh/status/1478241607228919811?ref_src=twsrc%5Etfw">January
+                                            4, 2022</a>
+                                    </blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
+                                </div>
+                                <div id="hottweet_right2">
+                                    <blockquote class="twitter-tweet">
+                                        <p lang="ja" dir="ltr">申鶴さん実装おめでとう！❄❄❄<a
+                                                href="https://twitter.com/hashtag/%E5%8E%9F%E7%A5%9E?src=hash&amp;ref_src=twsrc%5Etfw">#原神</a>
+                                            <a
+                                                href="https://twitter.com/hashtag/GenshinImapct?src=hash&amp;ref_src=twsrc%5Etfw">#GenshinImapct</a>
+                                            <a
+                                                href="https://twitter.com/hashtag/chongyun?src=hash&amp;ref_src=twsrc%5Etfw">#chongyun</a>
+                                            <a
+                                                href="https://twitter.com/hashtag/shenhe?src=hash&amp;ref_src=twsrc%5Etfw">#shenhe</a>
+                                            <a href="https://t.co/y9QNXHYWhf">pic.twitter.com/y9QNXHYWhf</a>
+                                        </p>&mdash;
+                                        雨壱絵穹◆エオルゼア学園連載中 (@Esojiros) <a
+                                            href="https://twitter.com/Esojiros/status/1478678414358097920?ref_src=twsrc%5Etfw">January
+                                            5, 2022</a>
+                                    </blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js"
+                                        charset="utf-8"></script>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- ========New Character====== -->
+
+    <!-- ========Footer====== -->
+    <footer class="footer">
+        <div class="footer_container">
+            <dl>
+                <dt>Data Sources</dt>
+                <dd>Twitter</dd>
+                <dd><a href="https://genshin.mihoyo.com/en/home">Genshin Official Site</a></dd>
+            </dl>
+            <dl>
+                <dt>Tools</dt>
+                <dd><a href="https://tags.hawksey.info/get-tags/">Get TAGS</a></dd>
+                <dd>Microsoft Visual Studio Code</dd>
+                <dd>Microsoft Excel</dd>
+                <dd>Adobe Illustrator</dd>
+            </dl>
+            <dl>
+                <dt>About Me</dt>
+                <dd>Bihe Lin</dd>
+            </dl>
+
+        </div>
+    </footer>
+    <!-- ========Footer====== -->
+</body>
+
+</div>
+
+</body>
+
+</html>

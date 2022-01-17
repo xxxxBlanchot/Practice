@@ -1,0 +1,209 @@
+.part1 {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 2000px;
+    background-color: rgba(255,255,255,.2);
+}
+.body .text_deco_left_top {
+    position: absolute;
+    left: -39px;
+    top: -58px;
+    width: 141px;
+    height: 171px;
+    background: url(../images/text_deco.svg) no-repeat 0px 0px;
+    background-size: 300%;
+    opacity: .8;
+}
+.body .text_deco_left_down {
+    position: absolute;
+    left: -32px;
+    bottom: -80px;
+    width: 141px;
+    height: 168px;
+    background: url(../images/text_deco.svg) -6.6px 207px;
+    background-size: 300%;
+    opacity: .8;
+}
+.body .text_deco_right_top {
+    position: absolute;
+    right: -70px;
+    top: -53px;
+    width: 141px;
+    height: 171px;
+    background: url(../images/text_deco.svg) no-repeat -311.2px -7.3px;
+    background-size: 300%;
+    opacity: .8;
+}
+.body .text_deco_right_down {
+    position: absolute;
+    right: -70px;
+    bottom: -84px;
+    width: 141px;
+    height: 171px;
+    background: url(../images/text_deco.svg) no-repeat -311.2px -215px;
+    background-size: 300%;
+    opacity: .8;
+}
+.body .text_deco_mid_top {
+    position: absolute;
+    right: 490px;
+    top: 0px;
+    width: 222px;
+    height: 42px;
+    background-color: skyblue;
+    background-size: 300%;
+    opacity: .8;
+}
+.body .text_deco_mid_down {
+    position: absolute;
+    right: 490px;
+    bottom: 0px;
+    width: 222px;
+    height: 42px;
+    background-color: skyblue;
+    background-size: 300%;
+    opacity: .8;
+}
+
+h2 {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: rgba(0,0,0,.5) 0 0 10px;
+}
+.subtittle {
+    position: relative;
+}
+.subtittle::before {
+    content: '';
+    position: absolute;
+    top: 010px;
+    left: 317px;
+    width: 135px;
+    height: 13px;
+    background: url(../images/tittle_deco_left.svg) no-repeat;
+}
+.subtittle::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 317px;
+    width: 135px;
+    height: 13px;
+    background: url(../images/tittle_deco_right.svg) no-repeat;
+}
+.subtittle:nth-of-type(3)::before {
+    left: 270px;
+}
+.subtittle:nth-of-type(3)::after {
+    right: 270px;
+}
+.body .whygenshin h1 {
+    text-align: center;
+    margin-top: 80px;
+    /* margin-left: -500px; */
+    /* color: white; */
+    color: white;
+    font-size: 50px;
+    font-family: 'Arial Black', Helvetica, sans-serif;
+    text-shadow: rgba(69, 187, 255, .5) 0 0 20px ;
+}
+.body .whygenshin>p {
+    margin-top: 20px;
+    padding: 0 200px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: rgba(0,0,0,.5) 0 0 10px;
+}
+
+.body .genshin_pics {
+    margin: 10px auto;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 260px;
+    background-color: rgba(255,255,255,.3);
+}
+.body .genshin_pics ul {
+    margin-top: -10px;
+}
+.body .genshin_pics ul li {
+    margin: 0 10px;
+    float: left;
+    /* width: 350px; */
+    height: 200px;
+    background-color: skyblue;
+}
+.body .genshin_pics ul li img {
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+    filter: blur(1.5px);
+    transition: all .25s ease-in-out;
+}
+.body .genshin_pics ul li:hover img {
+    /* transform:scale(1.5,1.5); */
+    filter: blur(0px);
+}
+.body .genshin_cities {
+    margin-top: 5px;
+    text-align: center;
+}
+.body .genshin_cities ul {
+    margin: 0 auto;
+}
+.body .genshin_cities ul li {
+    margin: 5px 20px;
+    width: 300px;
+    float: left;
+    align-items: center;
+    text-align: center;
+}
+.body .genshin_pics #cities {
+    margin-top: 5px;
+    padding-left: 145px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: rgba(0,0,0,.8) 0 0 10px;
+}
+.body .whygenshin>span {
+    display: block;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.body .whygenshin>span>a {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255,255,255,.7);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .25s ease-in-out;
+    text-decoration: none;
+}
+.body .whygenshin>span a:hover {
+    color: rgba(255,255,255,1);
+    text-shadow: 0px 0px 10px rgba(255,255,255,1);
+}
+.body .whygenshin .intro_video {
+    margin: 40px auto;
+    width: 560px;
+    height: 315px;
+}
