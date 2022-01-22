@@ -42,12 +42,13 @@
     <!-- ======background video====== -->
     <div class="bgvideo">
         <div class="blank"></div>
-        <video muted="muted" autoplay="autoplay" loop="loop" style="opacity: 1" style="width: 1280px; height:720px;" poster="images/bg_poster.jpg">
-            <source src="media/bg-video.webm" type="video/webm">
+        <video muted="muted" loop="loop" style="opacity: 1" style="width: 1280px; height:720px;"
+            poster="images/bg_poster.jpg">
+            <!-- <source src="media/bg-video.webm" type="video/webm"> -->
             <source src="media/bg-video.mp4" type="audio/mp4">
-            <source src="media/bg-video.ogv" type="video/ogg">
-           
+            <!-- <source src="media/bg-video.ogv" type="video/ogg"> -->
         </video>
+
     </div>
     <!-- ======background video====== -->
 
@@ -83,7 +84,7 @@
                     iOS, Microsoft Windows, PlayStation 4&5, and it will release on Nintendo Switch in the future.</p>
                 <br>
                 <p id="content">Stories of Genshin play out on the continent of Teyvat, a fantasy world with seven
-                    elements of power, including wind, water, fire, ice, rock, thunder, and grass. By far, there are
+                    elements of power, including anemo (air), pyro, cryo, electro, hydro, geo and dendro (coming soon). By far, there are
                     over five countries and areas are open for players to explore, and more than 40 characters with
                     different elemental power and weapon types to choose from. Players will play the part of a
                     “traveller” in Genshin’s world, looking for the lost sibling.</p><br>
@@ -109,25 +110,28 @@
                 <div class="subtittle">
                     <h2 id="intro">Reasons for choosing Genshin </h2>
                 </div>
-
                 <p>The most important reason is that I am a player of Genshin and fond of this game, attracted by the
                     plot, the battle with elemental abilities, and those vivid characters. What’s more, Genshin is hot
-                    globally. By 25 October 2021, there were almost 9,000,000 people averagely playing per day in the
+                    globally. By 25 October 2021, there were almost <strong>9,000,000</strong> people averagely playing
+                    per day in the
                     last 30 days.
                 </p>
                 <span>
                     <a href="https://www.dexerto.com/genshin-impact/how-many-people-play-genshin-impact-player-count-tracker-1683360/"
-                        target="blank"> &gt;&gt; Data Source &lt;&lt; </a>
+                        target="blank"> &gt;&gt; Data Source：How many people play Genshin Impact? Player count tracker
+                        (October 2021) &lt;&lt; </a>
                 </span>
                 <p>
-                    Furthermore, one of the new characters named Yunjin sparked a lively discussion among Chinese
+                    Furthermore, one of the new characters named <strong>Yunjin</strong> sparked a lively discussion
+                    among Chinese
                     players for the Liyue opera she sang. Therefore, I was curious about how people would talk about
                     Genshin’s new version, especially the two new characters.
                 </p><br>
                 <p>
-                    It is noteworthy that miHoYo strongly supports secondary creation works amongst Genshin players,
-                    like illustrations, comics, fan-made videos etc. We could find plenty of brilliant works on various
-                    social platforms like Twitter.
+                    It is noteworthy that miHoYo strongly supports <strong>Derivative works</strong> amongst Genshin
+                    players,
+                    like illustrations, comics, fan-made videos etc. Twitter is one of the hottest social platform We
+                    could find plenty of brilliant works on Twitter.
                 </p>
                 <div class="subtittle">
                     <h2 id="intro">Yunjin's Opera </h2>
@@ -218,18 +222,24 @@
                     </div>
                     <div class="narrator">
                         <p id="narrator">
-                            The total tweets colleted was 34,868 and the number for tweeters was 21,867,
-                            averagely every tweeter had 1.6 tweets and 2,682 tweets were created every hour. Amongst
-                            34,868 tweets, there were 677 original ones and the 21,688 retweets occupied for 98.06%.
-                            Around 62.2% of tweets had locations. Interestingly, the top3 tweets' resources were Twitter
-                            for android, iPhone and Web App.</p>
+                            The total tweets colleted was <strong>34,868</strong> and the number for tweeters was
+                            <strong>21,867</strong>,
+                            averagely every tweeter had <strong>1.6</strong> tweets and <strong>2,682</strong> tweets
+                            were created every hour. Amongst <strong>34,868</strong>
+                            tweets, there were <strong> 677 </strong>original ones and the <strong>21,688</strong>
+                            retweets occupied for <strong> 98.06%</strong>.
+                            <br> Interestingly, the top3 tweets' resources were <strong>Twitter
+                                for android, iPhone and Web App</strong>. <Strong>76%</Strong> of users browsed tweets
+                            via mobile phones. Among all tweets, there were <strong> 14</strong> tweets shared directly
+                            from the game in PlayStation Network.
+                        </p>
                         <br>
                     </div>
                     <div class="basic">
                         <div class="tweets_tittle">
                             <ul>
                                 <li>
-                                    <h2>Basic Information</h2>
+                                    <h2>Proportion of Tweet Types</h2>
                                 </li>
                                 <li>
                                     <h2>Tweets Sources</h2>
@@ -246,88 +256,50 @@
                                 var app = {};
                                 var option;
                                 option = {
-                                    textStyle: {
-                                        fontWeight: [700]
-                                    },
                                     tooltip: {
-                                        trigger: 'item',
-                                        formatter: '{a} <br/>{b}: {c} ({d}%)'
+                                        trigger: 'item'
                                     },
                                     legend: {
-                                        data: ['Retweets', 'Original Tweets'],
+                                        top: '0%',
+                                        left: 'center',
                                         textStyle: {
                                             color: "#fff",
                                             fontWeight: '700',
-                                            fontSize: '13'
+                                            fontSize: '14'
                                         }
                                     },
                                     series: [
                                         {
-                                            name: 'Tweet Type',
+                                            name: 'Types',
                                             type: 'pie',
-                                            selectedMode: 'single',
-                                            radius: [0, '30%'],
+                                            top: "3%",
+                                            radius: ['30%', '60%'],
+                                            avoidLabelOverlap: false,
                                             label: {
-                                                position: 'inner',
-                                                fontSize: 12,
-                                                color: '#fff'
+                                                show: false,
+                                                position: 'center',
+                                                color: '#666'
+                                            },
+                                            emphasis: {
+                                                label: {
+                                                    show: true,
+                                                    color: '#fff',
+                                                    fontSize: '20',
+                                                    fontWeight: 'bold'
+                                                    //   textBorderColor: '#fff',
+                                                    //   textBorderWidth: '1.5'
+                                                }
                                             },
                                             labelLine: {
                                                 show: false
                                             },
                                             data: [
-                                                { value: 34191, name: 'Retweets' },
-                                                { value: 677, name: 'Original Tweets', selected: true }
-                                            ]
-                                        },
-                                        {
-                                            name: 'Location Status',
-                                            type: 'pie',
-                                            radius: ['45%', '60%'],
-                                            labelLine: {
-                                                length: 30
-                                            },
-                                            label: {
-                                                formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
-                                                backgroundColor: 'rgba(255,255,255,.5)',
-                                                borderColor: '#fff',
-                                                borderWidth: .5,
-                                                borderRadius: 4,
-                                                rich: {
-                                                    a: {
-                                                        color: '#6E7079',
-                                                        lineHeight: 22,
-                                                        align: 'center',
-                                                        fontSize: 11
-                                                    },
-                                                    hr: {
-                                                        borderColor: '#fff',
-                                                        width: '100%',
-                                                        borderWidth: 1,
-                                                        height: 0
-                                                    },
-                                                    b: {
-                                                        color: '#4C5058',
-                                                        fontSize: 12,
-                                                        fontWeight: 'bold',
-                                                        lineHeight: 33
-                                                    },
-                                                    per: {
-                                                        color: '#fff',
-                                                        backgroundColor: '#4C5058',
-                                                        padding: [3, 4],
-                                                        borderRadius: 4
-                                                    }
-                                                }
-                                            },
-                                            data: [
-                                                { value: 21688, name: 'With locations' },
-                                                { value: 13180, name: 'TWithout locations' }
+                                                { value: 677, name: 'Original Tweets' },
+                                                { value: 34191, name: 'ReTweets' },
                                             ]
                                         }
                                     ]
                                 };
-
 
                                 if (option && typeof option === 'object') {
                                     myChart.setOption(option);
@@ -336,7 +308,6 @@
                             </script>
                         </div>
                         <div class="tweets_sources">
-                            <!-- <h2 id="tweets_soureces">Top Sources</h2> -->
                             <div id="container3" style="height: 100%"></div>
                             <script type="text/javascript"
                                 src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
@@ -400,6 +371,158 @@
                                     myChart.setOption(option);
                                 }
 
+                            </script>
+                        </div>
+                        <div class="narrator">
+                            <p id="narrator"> More than half of the tweeters sent only 1 or 2 tweets. And, as the number of tweets increases, the fewer tweeters there were.
+                                To be specific, according to statistics, <strong>15,821</strong> tweeters sent only one tweet, accounting for <strong> 45.4%</strong> of the total; followed by  <strong> 3,429</strong> tweeters who sent two tweets, around 9.8% of the total; and only <strong>13</strong> users sent more than <strong>20</strong> tweets. <br>
+                                All of the top10 tweeters sent over <strong>20</strong> tweets, and the top1 tweeter had <strong>29</strong> tweets. Interestingly, all of their tweets were retweets from others. <strong>The retweet ratio among Top10 tweeter were 100%</strong>. 
+                                 </p>
+                        </div>
+                        <div class="tweets_volume">
+                            <div id="container10" style="height: 100%"></div>
+                            <script type="text/javascript"
+                                src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+                            <script type="text/javascript">
+                                var dom = document.getElementById("container10");
+                                var myChart = echarts.init(dom);
+                                var app = {};
+                                var option;
+                                option = {
+                                    tooltip: {
+                                        trigger: 'axis',
+                                        axisPointer: {
+                                            // Use axis to trigger tooltip
+                                            type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+                                        }
+                                    },
+                                    legend: {
+                                        textStyle: {
+                                            color: '#fff',
+                                            fontSize: '13',
+                                            fontWeight: '700'
+                                        }
+                                    },
+                                    textStyle: {
+                                        fontWeight: [700],
+                                        color: '#fff',
+                                        fontSize: '13'
+                                    },
+                                    grid: {
+                                        left: '3%',
+                                        right: '4%',
+                                        bottom: '30%',
+                                        containLabel: true
+                                    },
+                                    xAxis: {
+                                        type: 'value',
+                                        max: 22000
+                                    },
+                                    yAxis: {
+                                        type: 'category',
+                                        data: ['Number of tweets']
+                                    },
+                                    series: [
+                                        {
+                                            name: '1',
+                                            type: 'bar',
+                                            stack: 'total',
+                                            label: {
+                                                show: true
+                                            },
+                                            emphasis: {
+                                                focus: 'series'
+                                            },
+                                            data: [15821]
+                                        },
+                                        {
+                                            name: '2',
+                                            type: 'bar',
+                                            stack: 'total',
+                                            label: {
+                                                show: true
+                                            },
+                                            emphasis: {
+                                                focus: 'series'
+                                            },
+                                            data: [3429]
+                                        },
+                                        {
+                                            name: '3',
+                                            type: 'bar',
+                                            stack: 'total',
+                                            label: {
+                                                show: true
+                                            },
+                                            emphasis: {
+                                                focus: 'series'
+                                            },
+                                            data: [1229]
+                                        },
+                                        {
+                                            name: '4',
+                                            type: 'bar',
+                                            stack: 'total',
+                                            label: {
+                                                show: true
+                                            },
+                                            emphasis: {
+                                                focus: 'series'
+                                            },
+                                            data: [608]
+                                        },
+                                        {
+                                            name: '5～9',
+                                            type: 'bar',
+                                            stack: 'total',
+                                            label: {
+                                                show: true
+                                            },
+                                            emphasis: {
+                                                focus: 'series'
+                                            },
+                                            data: [643]
+                                        },
+                                        {
+                                            name: '10～19',
+                                            type: 'bar',
+                                            stack: 'total',
+                                            label: {
+                                                show: true
+                                            },
+                                            emphasis: {
+                                                focus: 'series'
+                                            },
+                                            data: [150]
+                                        },
+                                        {
+                                            name: 'over 20',
+                                            type: 'bar',
+                                            stack: 'total',
+                                            label: {
+                                                show: true
+                                            },
+                                            emphasis: {
+                                                focus: 'series'
+                                            },
+                                            data: [13]
+                                        }
+                                    ]
+                                };
+
+
+                                if (option && typeof option === 'object') {
+                                    myChart.setOption(option);
+                                }
+
+                            </script>
+                        </div>
+                        <h2> Top 10 Tweeters</h2>
+                        <div id="top10tweeters">
+                            <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-Jd8nD"
+                                src="https://datawrapper.dwcdn.net/Jd8nD/1/" scrolling="no" frameborder="0"
+                                style="width: 0; min-width: 100% !important; border: none;" height="364"></iframe>
+                            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
                             </script>
                         </div>
                     </div>
@@ -483,258 +606,111 @@
                         </script>
                     </div>
                     <div class="narrator">
-                        <p id="narrator">Among 21,866 tweets that had locations, the top 10 locations were as below.
-                            However, possibily in consider of privacy, some of locations were not valid. And the top5
-                            valid locations of countries were United States, Japan, France, Canada, and Mexico. </p>
+                        <p id="narrator">Around <strong>62.2%</strong> of tweets had locations, but none of them had
+                            geo co-ordinates. Among <strong>21,866</strong> tweets that were located, the top 10
+                            locations were
+                            as below.
+                            However, possibily in consider of privacy or for fun, some of locations were not valid; some
+                            of them used the city names from the game, for example Liyue. And the top5
+                            valid locations of countries were <strong>United States, Japan, France, Canada, and
+                                Mexico</strong> . </p>
                     </div>
                     <div class="tweets_map">
                         <div class="tweets_location">
-                            <div class="tweets_location_tittle">
-                                <ul>
-                                    <li>
-                                        <h2>Top 10 Locations</h2>
-                                    </li>
-                                    <li>
-                                        <h2>Top 5 Valid Locations</h2>
-                                    </li>
-                                </ul>
+                            <div class="left">
+                                <h2>Top 10 Locations</h2>
+                                <div id="container5">
+                                    <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-2kGtQ"
+                                        src="https://datawrapper.dwcdn.net/2kGtQ/2/" scrolling="no" frameborder="0"
+                                        style="width: 0; min-width: 100% !important; border: none;"
+                                        height="333"></iframe>
+                                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                                    </script>
+                                </div>
+
                             </div>
-                            <span class="left">
-                                <div id="container5"></div>
-                                <script type="text/javascript"
-                                    src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
-                                <script type="text/javascript">
-                                    var dom = document.getElementById("container5");
-                                    var myChart = echarts.init(dom);
-                                    var app = {};
-                                    var option;
-                                    option = {
-                                        title: {
-                                            text: '',
-                                            subtext: '',
-                                            left: 'center'
-                                        },
-                                        tooltip: {
-                                            trigger: 'item'
-                                        },
-                                        legend: {
-                                            orient: 'vertical',
-                                            left: '5%',
-                                            textStyle: {
-                                                color: "#fff",
-                                                fontWeight: '700'
-                                            }
-                                        },
-                                        series: [
-                                            {
-                                                name: 'Access From',
-                                                type: 'pie',
-                                                radius: '50%',
-                                                left: "60",
-                                                data: [
-                                                    { name: 'she/her', value: 388 },
-                                                    { name: 'United States', value: 126 },
-                                                    { name: 'he/him', value: 103 },
-                                                    { name: 'they/them', value: 101 },
-                                                    { name: 'Canada', value: 89 },
-                                                    { name: 'she/they', value: 83 },
-                                                    { name: 'California,USA', value: 72 },
-                                                    { name: 'México', value: 71 },
-                                                    { name: 'France', value: 71 },
-                                                    { name: '日本', value: 65 }
-                                                ],
-                                                emphasis: {
-                                                    itemStyle: {
-                                                        shadowBlur: 10,
-                                                        shadowOffsetX: 0,
-                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    };
-
-                                    if (option && typeof option === 'object') {
-                                        myChart.setOption(option);
-                                    }
-
-                                </script>
-                            </span>
-                            <span class="right">
-                                <div id="container6" style="height: 100%"></div>
-                                <script type="text/javascript"
-                                    src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
-                                <script type="text/javascript">
-                                    var dom = document.getElementById("container6");
-                                    var myChart = echarts.init(dom);
-                                    var app = {};
-                                    var option;
-                                    option = {
-                                        title: {
-                                            text: '',
-                                            subtext: '',
-                                            left: 'center'
-                                        },
-                                        tooltip: {
-                                            trigger: 'item'
-                                        },
-                                        legend: {
-                                            orient: 'vertical',
-                                            left: '0%',
-                                            textStyle: {
-                                                color: "#fff",
-                                                fontWeight: '700'
-                                            }
-                                        },
-                                        series: [
-                                            {
-                                                name: 'Access From',
-                                                type: 'pie',
-                                                radius: '50%',
-                                                left: "60",
-                                                data: [
-                                                    { name: 'United States', value: 537 },
-                                                    { name: 'Japan', value: 223 },
-                                                    { name: 'France', value: 139 },
-                                                    { name: 'Canada', value: 138 },
-                                                    { name: 'México', value: 130 }
-                                                ],
-                                                emphasis: {
-                                                    itemStyle: {
-                                                        shadowBlur: 10,
-                                                        shadowOffsetX: 0,
-                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    };
-
-                                    if (option && typeof option === 'object') {
-                                        myChart.setOption(option);
-                                    }
-
-                                </script>
-                            </span>
-                        </div>
-                        <div id="container4">
-                            <iframe title="Top 5 Valid Locations" aria-label="Map" id="datawrapper-chart-axsG0"
-                                src="https://datawrapper.dwcdn.net/axsG0/3/" scrolling="no" frameborder="0"
-                                style="width: 0; min-width: 100% !important; border: none;" height="514"></iframe>
-                            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
-                            </script>
+                            <div></div>
+                            <div class="right">
+                                <h2>Top 5 Valid Locations</h2>
+                                <div id="container6">
+                                    <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-1mPHm"
+                                        src="https://datawrapper.dwcdn.net/1mPHm/1/" scrolling="no" frameborder="0"
+                                        style="width: 0; min-width: 100% !important; border: none;"
+                                        height="178"></iframe>
+                                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                                    </script>
+                                </div>
+                                <!-- <div id="container4">
+                                    <iframe title="" aria-label="Map" id="datawrapper-chart-93c2R"
+                                        src="https://datawrapper.dwcdn.net/93c2R/1/" scrolling="no" frameborder="0"
+                                        style="width: 0; min-width: 100% !important; border: none;"
+                                        height="317"></iframe>
+                                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                                    </script>
+                                </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="narrator">
-                        <p id="narrator"> The total tweets created or retweeted by the top10 tweeters were 243, which
-                            was 0.7%. It is note-worthy that the creative atmosphere of Genshin topic was quite strong.
-                            The Top5 Tweets were all secondary creation works which covered 3 different genres,
-                            including illustrations, cosplay and manga. </p>
+                        <p id="narrator">
+                            Twitter is one of the most popular social platforms, with a huge player base under the topic
+                            of Genshin. Supported by players' creativity worldwide, Genshin's high-quality second
+                            creations are flourishing. The creative atmosphere of Genshin topic is robust. <br>
+
+                            The Top5 Tweets were all derivative works covering three different genres, including
+                            <strong>illustrations, cosplay and manga</strong>. The total tweets created or retweeted by
+                            the top10
+                            tweeters were <strong>243</strong>, <strong>0.7% </strong> of all data collected.
+                        </p>
                     </div>
                     <div class="top10">
-                        <div class="tweets_tittle" id="top_tittle">
-                            <ul>
-                                <li>
-                                    <h2> Top 10 Tweeters</h2>
-                                </li>
-                                <li>
-                                    <h2>Top 5 Tweets</h2>
-                                </li>
-                            </ul>
+                        
+                        <h2>Top 5 Tweets</h2>
+                        <div id="top5tweets">
+                            <iframe title="" aria-label="Table" id="datawrapper-chart-NpI7k"
+                                src="https://datawrapper.dwcdn.net/NpI7k/2/" scrolling="no" frameborder="0"
+                                style="width: 0; min-width: 100% !important; border: none;" height="384"></iframe>
+                            <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                            </script>
+                            <!-- <table id="top5tweets_table">
+                                <tr>
+                                    <th>Tweets</th>
+                                    <th>Number of Retweets</th>
+                                </tr>
+                                <tr>
+                                    <td>RT @kiyochiishoko: wip💙 #Shenhe #原神 https://t.co/c8jG80MxsV</td>
+                                    <td>2312</td>
+                                </tr>
+                                <tr>
+                                    <td>RT @KisaragiAsh: #GenshinImapct #Shenhe #原神 #申鹤
+                                        https://t.co/QeFOtYWn89</td>
+                                    <td>1523</td>
+                                </tr>
+                                <tr>
+                                    <td>RT @Esojiros: 申鶴さん実装おめでとう！❄❄❄
+                                        #原神 #GenshinImapct
+                                        #chongyun #shenhe https://t.co/y9QNXHYWhf</td>
+                                    <td>1410</td>
+                                </tr>
+                                <tr>
+                                    <td>RT @iunsei: #YUNJIN DAY!!!! https://t.co/FiZt4vg9z0</td>
+                                    <td>1195</td>
+                                </tr>
+                                <tr>
+                                    <td>RT @pun_rii: #shenhe Thank you 😳 https://t.co/Du8A7zUmuS</td>
+                                    <td>1172</td>
+                                </tr>
+                            </table> -->
                         </div>
-                        <div id="top_table_container">
-                            <ul id="top">
-                                <li>
-                                    <div class="toptweeterstable">
-                                        <table id="top10tweeters">
-                                            <tr>
-                                                <th>Tweeters</th>
-                                                <th>Number of Tweets</th>
-                                            </tr>
-                                            <tr>
-                                                <td>STANTRlGGER</td>
-                                                <td>29</td>
-                                            </tr>
-                                            <tr>
-                                                <td>cloudedeee</td>
-                                                <td>28</td>
-                                            </tr>
-                                            <tr>
-                                                <td>aleexu_</td>
-                                                <td>26</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mikoto_HanaNene</td>
-                                                <td>25</td>
-                                            </tr>
-                                            <tr>
-                                                <td>tsururoachie</td>
-                                                <td>24</td>
-                                            </tr>
-                                            <tr>
-                                                <td>KiralovesIdols</td>
-                                                <td>24</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Idkokl</td>
-                                                <td>
-                                                    24</td>
-                                            </tr>
-                                            <tr>
-                                                <td>peaPkey</td>
-                                                <td>23</td>
-                                            </tr>
-                                            <tr>
-                                                <td>zhongxxxiaoyun</td>
-                                                <td>20</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ruzikaya</td>
-                                                <td>20</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Total</td>
-                                                <td>243</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="top5tweets">
-                                        <table id="top5tweets">
-                                            <tr>
-                                                <th>Tweets</th>
-                                                <th>Number of Retweets</th>
-                                            </tr>
-                                            <tr>
-                                                <td>RT @kiyochiishoko: wip💙 #Shenhe #原神 https://t.co/c8jG80MxsV</td>
-                                                <td>2312</td>
-                                            </tr>
-                                            <tr>
-                                                <td>RT @KisaragiAsh: #GenshinImapct #Shenhe #原神 #申鹤
-                                                    https://t.co/QeFOtYWn89</td>
-                                                <td>1523</td>
-                                            </tr>
-                                            <tr>
-                                                <td>RT @Esojiros: 申鶴さん実装おめでとう！❄❄❄
-                                                    #原神 #GenshinImapct
-                                                    #chongyun #shenhe https://t.co/y9QNXHYWhf</td>
-                                                <td>1410</td>
-                                            </tr>
-                                            <tr>
-                                                <td>RT @iunsei: #YUNJIN DAY!!!! https://t.co/FiZt4vg9z0</td>
-                                                <td>1195</td>
-                                            </tr>
-                                            <tr>
-                                                <td>RT @pun_rii: #shenhe Thank you 😳 https://t.co/Du8A7zUmuS</td>
-                                                <td>1172</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="narrator">
+                            <p id="narrator">
+                                The total number of Top5 retweets was <strong>7,612</strong>, which was
+                                <strong>21.8%</strong> of total tweets and <strong>22.3%</strong> of all retweets. Among
+                                the Top5 tweets, 4 out of the Top5 were about Shenhe, while only one was for Yunjin.
+                            </p>
                         </div>
                     </div>
+
                     <div class="hot_tweets_container">
                         <ul>
                             <li>
@@ -826,9 +802,44 @@
                         </ul>
 
                     </div>
+                    <div class="wordcloud">
+                        <h2>Word Cloud</h2>
+                        <div class="wordcloud_pic">
+                            <div id="container7"></div>
+                        </div>
+                        <div class="narrator">
+                            <p id="narrator">
+
+                                The Word Cloud shows Shenhe and chongyun were the most mentioned character names amongst
+                                all tweets. The first five buzzwords are all related to Shenhe and have a direct connection to her. Also new to the characters, there were <strong>31,590</strong> tweets
+                                mentioning shenhe, accounting for <strong> 90.6% </strong>of the total number of tweets,
+                                while there were only <strong>3,634 </strong>tweets about yunjin, or about
+                                <strong>10.4%</strong>. <br> It is clear that Shenhe's discussion is far more heated
+                                than Yunjin's, with the former having almost ten times as many relevant tweets as the
+                                latter. <br>
+                                 Tips: Both '申鶴' and '申鹤' stand for Shenhe; '雲菫' and '云堇' stand for Yunjin.
+                            </p>
+                        </div>
+                        <div class="mentioned_times">
+                            <div id="container8">
+                                <iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-8Ewsm"
+                                    src="https://datawrapper.dwcdn.net/8Ewsm/2/" scrolling="no" frameborder="0"
+                                    style="width: 0; min-width: 100% !important; border: none;" height="109"></iframe>
+                                <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                                </script>
+                            </div>
+                        </div>
+                        <div class="mentioned_times_specific">
+                            <div id="container11">
+                                <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-txoIs" src="https://datawrapper.dwcdn.net/txoIs/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="390"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
     </div>
     <!-- ========New Character====== -->
 
@@ -848,8 +859,9 @@
                 <dd>Adobe Illustrator</dd>
             </dl>
             <dl>
-                <dt>About Me</dt>
-                <dd>Bihe Lin</dd>
+                <dt>References</dt>
+                <dd><a href="https://www.dexerto.com/genshin-impact/how-many-people-play-genshin-impact-player-count-tracker-1683360/">1 / How many people play Genshin Impact? Player count tracker (October 2021)</a> </dd>
+                <dd><a href="https://scholarworks.sjsu.edu/art108/29/">2 / Mechanics of Ascension Through Genshin Impact</a></dd>
             </dl>
 
         </div>
